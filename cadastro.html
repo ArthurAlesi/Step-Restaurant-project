@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Formulario</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Formulario</title>
+
+  <style>
+    #form-container{
+      background-color: #CCC;
+      width: 400px;
+      height: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="form-container">
+
 
     <form name="formteste" action="" method="post">
-        <H1>Passa teus Dados Meu Irmão</H1>
+      <H1>Passa teus Dados Meu Irmão</H1>
 
-        <p class="nome">
-            <input type="text" name="Nome" placeholder="Nome" required="required">
-        </p>
+      <p class="nome">
+        <input type="text" name="Nome" placeholder="Nome" required="required">
+      </p>
 
-        <p class="sobrenome">
-            <input type="text" name="Sobrenome" placeholder="Sobrenome" required="required">
-        </p>
+      <p class="sobrenome">
+        <input type="text" name="Sobrenome" placeholder="Sobrenome" required="required">
+      </p>
 
-        <p class="email">
-            <input type="email" name="Email" placeholder="Email" required="required">
-        </p>
+      <p class="email">
+        <input type="email" name="Email" placeholder="Email" required="required">
+      </p>
 
-       
 
-        <p class="Senha">
-            <input type="senha" name="Senha" placeholder="Senha" required="required">
-        </p>
 
-        <p class="Confirmar">
-            <input type="confimar" name="Confirmar" placeholder="Confirmar senha" required="required">
-        </p>
+      <p class="Senha">
+        <input type="senha" name="Senha" placeholder="Senha" required="required">
+      </p>
 
-        <p class="enviar">
-                <input type="submit" name="Enviar" value="Enviar">  
-        </p>
+      <p class="Confirmar">
+        <input type="confimar" name="Confirmar" placeholder="Confirmar senha" required="required">
+      </p>
+
+      <p class="enviar">
+        <input type="submit" name="Enviar" value="Enviar">
+      </p>
 
     </form>
+  </div>
+</body>
 
-  </body>
 </html>
