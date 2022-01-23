@@ -1,0 +1,201 @@
+<!DOCTYPE HTML> <!-- instrução que determine ao navegador a versão da html      -->
+
+<!--  no caso, a tag 'html' é onde vai ser escrito todo o documento. o atributo lang especifica que o documento está em portugês-Brasil. Facilita acessos e rankings da página     -->
+<html lang="pt-br">
+
+
+
+    
+<!-- a tag 'head' funciona como um cabeçalho do documento, aqui se coloca informações importantes que não irão aparecer no texto exibido. informações de caracter usado, título da página, estrutura css etc       -->
+<head>
+    <!-- determine o padrão de utilizção de caracter. nesse caso, o utf-8 é muito comum na lingua portuguesa pela possibilidade de acentos, ç etc      -->
+    <meta charset="UTF-8">
+
+
+    <title>Formatação de Texto</title> <!-- é o título que sera exibida na tab ou guia do navegador      -->
+
+    <!-- link  "especifica a relação entre o documento atual e um recurso externo". Muito usado para vincular as folhas de estilo       -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+
+<!-- basicamente todo o conteúdo do site é escrito dentro da tag body. só é possivel criar uma tag body por documento      -->
+<body>
+
+
+    <!-- O texto mais estruturado é composto por títulos e parágrafos
+    , independentemente de estar lendo uma história, um jornal,
+     um livro de texto da faculdade, uma revista, etc. -->
+    <!-- <img src="https://mdn.mozillademos.org/files/12371/newspaper_small.jpg" alt="Smiley face" height="600" width="1000"> -->
+
+
+
+    <h3>Tipo de Fontes nativa</h3>
+    <p>fantasy;cursive;monospace;sans-serif;Helvetica, Arial, sans-serif;Times</p>
+    <p style="color:brown; font-size:25px; margin-left:30px ;  font-family: Arial ">Eu sou um parágrafo, oh sim, eu
+        sou.</p> <!-- Em HTML, cada parágrafo deve ser envolvido em um elemento <p> , assim: -->
+
+
+
+
+
+    <h1>Eu sou o título da história.</h1> <!-- Cada título deve ser envolvido em um elemento de título: -->
+
+    <!-- Existem seis elementos de título - <h1>, <h2>, <h3>, <h4>, <h5> e <h6> .
+        Cada elemento representa um nível diferente de conteúdo no documento;
+        <h1> representa o título principal,
+        <h2> representa subtítulos, <h3>
+        representa sub-subtítulos, e assim por diante. -->
+
+    <!-- Como exemplo, em uma história, 
+    <h1> representaria o título da história, 
+    <h2> representaria o título de cada capítulo
+    <h3> representaria sub-seções de cada capítulo, e assim por diante -->
+
+    <h1>O furo de esmagamento</h1>
+
+    <p>Por Chris Mills</p>
+
+    <h2>Capítulo 1: A noite escura</h2>
+
+    <p>Era uma noite escura. Em algum lugar, uma coruja hooted. A chuva bateu no ...</p>
+
+    <h2>Capítulo 2: o eterno silêncio</h2>
+
+    <p>Nosso protagonista não podia tanto como um sussurro da figura sombria ...</p>
+
+    <h3>O espectro fala</h3>
+
+    <p>Mais de horas passaram, quando, de repente, o espectro sentou-se certo e exclamou: "Tenha piedade da minha alma!"
+    </p>
+
+    <!-- De preferência, você deve usar apenas um <h1> por página -
+        este é o título do nível superior, e
+        todos os outros se sentem abaixo desta na hierarquia. -->
+
+    <!-- Certifique-se de usar os títulos na ordem correta na hierarquia.
+        Não use <h3> para representar subtítulos, seguido de 
+        <h2>para representar sub-subtítulos - 
+        isso não faz sentido e levará a resultados estranhos. -->
+
+    <!-- Por que precisamos de estrutura? -->
+    <!-- SEO (Search Engine Optimization). -->
+    <!-- As pessoas gravemente deficientes visuais 
+        muitas vezes não leêm páginas da web; 
+        elas escutam-na em vez disso. 
+        Isso é feito com um software chamado screen reader. -->
+
+
+    <!-- Por que precisamos de semântica? -->
+    <h1>Este é um título de nível superior</h1>
+
+    <!-- span normalmente é usado para destacar alguma conteúdo através de atributos. Ele é como a div, mas para linhas ao invés de blocos     -->
+    <span style="font-size: 32px; margin: 21px 0;">Este é um título de nível superior?</span> <!-- apesar dessa linha aparecer do memso tamanho do h1 anterior, ele nao é um título prorimamente       -->
+
+
+    <h1>Listas</h1>
+
+    <!-- Toda lista desordenada começa com um <ul> - isso envolve todos os itens da lista: -->
+    <!-- O último passo é envolver cada item da lista em um elemento <li> (elemento da lista): -->
+
+    <h3>Lista não Ordenada</h3>
+    <ul>
+        <li>leite</li>
+        <li>ovos</li>
+        <li>pão</li>
+        <li>homus</li>
+    </ul>
+
+    <h3>Lista Ordenada</h3>
+
+    <!-- A estrutura de marcação é a mesma que para as listas não ordenadas, 
+    exceto que você deve conter os itens da lista em um elemento <ol>, em vez de <ul>: -->
+
+    <ol>
+        <li>Dirija até o final da estrada</li>
+        <li>Vire à direita</li>
+        <li>Vá em frente nas duas primeiras rotundas</li>
+        <li>Vire à esquerda na terceira rotatória</li>
+        <li>A escola fica à sua direita, a 300 metros da estrada</li>
+
+    </ol>
+
+    <h3> Lista de aninhamento </h3>
+    <!-- É perfeitamente adequado aninhar uma lista dentro de outra. 
+    Você pode querer ter algumas sub-listas sentadas abaixo de uma lista de nível superior.  -->
+    <ol>
+        <li> Remova a pele do alho e corte grosseiramente.</li>
+        <li>Remova todas as sementes e haste da pimenta e corte grosseiramente.</li>
+        <li>Adicione todos os ingredientes a um processador de alimentos.</li>
+        <li>Processe todos os ingredientes em uma pasta.
+            <ul>
+                <li>Se você quer um hummus grosso "grosso", processe-o por um curto período de tempo.</li>
+                <li>Se você quer um hummus suave, processe-o por mais tempo.</li>
+                <li>Se você quer um hummus grosso "grosso", processe-o por um curto período de tempo.</li>
+                <li>Se você quer um hummus suave, processe-o por mais tempo.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Listas de descrição</h3>
+
+    <!-- As listas de descrição usam um invólucro diferente dos outros tipos de lista — <dl>;
+        além disso, cada termo está envolvido em um <dt> (termo de descrição) elemento,
+            e cada descrição está envolvida em um
+        <dd> (definição de descrição) elemento.
+            Vamos terminar marcando nosso exemplo: -->
+
+    <dl>
+        <dt>solilóquio</dt>
+        <dd>No drama, onde um personagem fala a si mesmo, representando seus pensamentos ou sentimentos internos e no
+            processo, transmitindo-os ao público (mas não a outros personagens).</dd>
+        <dt>monólogo</dt>
+        <dd>No drama, onde um personagem fala seus pensamentos em voz alta para compartilhá-los com o público e com
+            outros personagens presentes.</dd>
+        <dt>aparte</dt>
+        <dd>No drama, onde um personagem compartilha um comentário apenas com o público para efeito humorístico ou
+            dramático. Isso geralmente é um sentimento, pensamento ou parte de informação de fundo adicional.</dd>
+    </dl>
+
+    <h3>Ênfase</h3>
+
+    <!-- Em HTML usamos o elemento de ênfase <em> para marcar tais instâncias. 
+        Além de tornar o documento mais interessante para ler, 
+        estes são reconhecidos pelos leitores de tela e falados em um tom de voz diferente. -->
+    <p>Eu estou <em>feliz</em> você não está atrasado</em>.</p>
+
+
+        <p>Estou contando com você. <strong>Não</strong> esteja atrasado!</p>
+        Se você beber, <strong>você pode <em>morrer</em></strong>.
+    </p>
+
+
+
+    <h3> <i>Itálico</i>, <b>negrito</b>, <u>sublinhado</u></h3>
+
+
+    <!-- Os elementos que discutimos até agora têm clara semântica associada. 
+    A situação com <b> com <i> , e com <u> é um pouco mais complicada. 
+        Eles surgiram para que as pessoas pudessem escrever negrito, itálico ou texto sublinhado em uma época em que o CSS ainda era mal suportado. 
+        Elementos como este, que apenas afetam a apresentação e não a semântica, são conhecidos como elementos de apresentação e não devem mais ser usados, 
+        porque, como já vimos, a semântica é tão importante para a acessibilidade, SEO, etc. -->
+
+
+
+    <h3>Blockquotes</h3>
+
+    <!-- Se uma seção de conteúdo em nível de bloco (seja um parágrafo, vários parágrafos, uma lista, etc.) 
+        for citada em algum outro lugar, você deverá envolvê-la em um elemento <blockquote>  -->
+
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+                Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+    </blockquote>
+
+
+    <!-- Configure os aspcetos de formatação do documento HTML hospedado no repositorio a baixo.
+            Exercicios: https://github.com/mdn/learning-area/blob/master/html/introduction-to-html/html-text-formatting/text-start.html -->
+</body>
+
+</html>
