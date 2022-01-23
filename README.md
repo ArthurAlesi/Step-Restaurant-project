@@ -17,6 +17,7 @@ you can check my javascript job here
 The purpoise was to build a restaurant site using HTML. My project has a a dropdown menu(menu from html) , a page with the menu restaruant, a registering form and a sign in section. <br>
 Because i made a "halloween-restaurant" I tried to used the colors of halloween. Black, and orange mainly. That's the reason of the visual identity.
 
+## click here >> https://arthuralesi.github.io/Step-Restaurant-project/  to navigate to it
 
 ![image](https://user-images.githubusercontent.com/54421573/150689476-fa5dcb64-4aaa-4e35-9a8e-c9678c710ac1.png)
 
